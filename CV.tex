@@ -1,0 +1,317 @@
+%-------------------------------------------------------------------------------
+%                             ADDITIONAL PACKAGES
+%-------------------------------------------------------------------------------
+\documentclass[
+	a4paper,
+	% showframes,
+	% vline=2.2em,
+	% maincolor=cvgreen,
+	% sidecolor=gray!50,
+	% sectioncolor=red,
+	% subsectioncolor=orange,
+	% itemtextcolor=black!80,
+	% sidebarwidth=0.4\paperwidth,
+	% topbottommargin=0.03\paperheight,
+	% leftrightmargin=20pt,
+	% profilepicsize=4.5cm,
+	% profilepicborderwidth=3.5pt,
+	% profilepicstyle=profilecircle,
+	% profilepiczoom=1.0,
+	% profilepicxshift=0mm,
+	% profilepicyshift=0mm,
+	% profilepicrounding=1.0cm,
+	% logowidth=4.5cm,
+	% logospace=5mm,
+	% logoposition=before,
+]{fortysecondscv}
+
+
+% improve word spacing and hyphenation
+\usepackage{microtype}
+\usepackage{ragged2e}
+
+% uncomment in case you don't want any hyphenation
+% \usepackage[none]{hyphenat}
+
+% take care of proper font encoding
+\ifxetexorluatex
+	\usepackage{fontspec}
+	\defaultfontfeatures{Ligatures=TeX}
+	%	\newfontfamily\headingfont[Path = fonts/]{segoeuib.ttf} % local font
+\else
+	\usepackage[utf8]{inputenc}
+	\usepackage[T1]{fontenc}
+	%	\usepackage[sfdefault]{noto} % use noto google font
+\fi
+
+% enable mathematical syntax for some symbols like \varnothing
+\usepackage{amssymb}
+
+%-------------------------------------------------------------------------------
+%                            PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+%% mandatory information
+\cvname{Artyom Afanasov}
+% \cvjobtitle{Panda Scientist,\\[0.2em] Panda of the Year}
+
+%% optional information
+\cvprofilepic{pics/profile.jpg}
+% \cvlogopic{pics/profile.jpg}
+
+\cvbirthday{January 3, 1999}
+\cvaddress{Russia, Saint Petersburg, Peterhof} % Use \newline if more than 1 line is required
+\cvcustomdata{\faGithub}{\href{https://github.com/ArtyomAfanasov}{ArtyomAfanasov}}
+\cvmail{afanasov.artyom@gmail.com}
+\cvcustomdata{\faTelegram}{\href{https://t.me/patoshca}{@patoshca}}
+\cvphone{+7(981)718-54-81}
+
+% personal website
+% \cvsite{https://pandascience.net}
+
+% pgp key
+% \cvkey{4096R/FF00FF00}{0xAABBCCDDFF00FF00}
+
+%-------------------------------------------------------------------------------
+%                              SIDEBAR 1st PAGE
+%-------------------------------------------------------------------------------
+% add more profile sections to sidebar on first page
+\addtofrontsidebar{
+	% include gosquare national flags from https://github.com/gosquared/flags;
+	% naming according to ISO 3166-1 alpha-2 country codes
+	\graphicspath{{pics/flags/}}
+
+	% % social network accounts incl. proper hyperlinks
+	% \profilesection{Social Network}
+	% 	\begin{icontable}{2.5em}{1em}
+	% 		\social{\aiOverleafSquare}
+	% 			{https://de.overleaf.com/latex/templates/forty-seconds-cv/pztcktmyngsk}
+	% 			{Overleaf Template Link}
+	% 		\social{\faGithub}
+	% 			{https://github.com/PandaScience/FortySecondsCV}
+	% 			{Github Project Page Link}
+	% 	\end{icontable}
+
+	\profilesection{Languages}
+	\pointskill{\flag{RU.png}}{Russian}{5}
+	\pointskill{\flag{GB.png}}{English}{3}
+
+}
+
+%-------------------------------------------------------------------------------
+%                              SIDEBAR 2nd PAGE
+%-------------------------------------------------------------------------------
+\addtobacksidebar{
+	\profilesection{Skills}
+    \pointskill{\faWindows}{.NET}{3}[4]
+	\skill[1.8em]{\faCaretRight}{C\#}
+	\skill[3.0em]{\faCaretRight\faCaretRight}{MSTest}
+	\skill[3.0em]{\faCaretRight\faCaretRight}{TPL}
+	\skill[3.0em]{\faCaretRight\faCaretRight}{DI}  
+    \skill[3.0em]{\faCaretRight\faCaretRight}{Reflection}
+    \skill[3.0em]{\faCaretRight\faCaretRight}{WPF}
+    \skill[3.0em]{\faCaretRight\faCaretRight}{Exception Handling} 
+    \skill[3.0em]{\faCaretRight\faCaretRight}{CodeStyle}
+	\skill[1.8em]{\faCaretRight}{F\#}
+	\pointskill{\faCaretRight}{Java}{1}[4]
+	\pointskill{\faCaretRight}{TypeScript}{1}[4]
+	\pointskill{\faCaretRight}{VCS}{3}[4]
+	\skill[1.8em]{\faCaretRight}{git, TortoiseGit, GitLub, GitHub}
+	\pointskill{\faDatabase}{Databases}{2}[4]
+	\skill[1.8em]{\faCaretRight}{MsSQL, ORM}
+	\skill[1.8em]{\faCaretRight}{Amazon RDS}
+	\skill[1.8em]{\faCaretRight}{Microsoft Azure SQL Databases}
+	\pointskill{\faCogs}{CI/CD}{2}[4]
+	\skill[1.8em]{\faCaretRight}{TeamCity, Docker}
+	\pointskill{\faCaretRight}{Software Design}{2}[4]
+	\skill[1.8em]{\faCaretRight}{UML-diagrams}
+	\pointskill{\faCaretRight}{Sniffing}{2}[4]
+	\skill[1.8em]{\faCaretRight}{Wireshark, Fiddler, Burp Suite}
+	\pointskill{\faCaretRight}{Assembler}{2}[4]
+	\skill[1.8em]{\faCaretRight}{Intel x86}
+	\skill[1.8em]{\faCaretRight}{DSP C66x}
+	\pointskill{\faLinux}{Linux}{2}[4]
+	\skill[1.8em]{\faCaretRight}{bash tools, VM administration}
+	\pointskill{\faCaretRight}{Jupyter-notebook}{2}[4]
+	\skill[1.8em]{\faCaretRight}{python}
+	\skill[1.8em]{\faCaretRight}{pretty result via Markdown}
+	\pointskill{\faCaretRight}{Cloud computing}{2}[4]
+	\skill[1.8em]{\faCaretRight}{AWS}
+	\skill[1.8em]{\faCaretRight}{Microsoft Azure}
+	\pointskill{\faCaretRight}{Information Security}{1}[4]
+	\skill[1.8em]{\faCaretRight}{exploit tools, bash}
+	\skill[1.8em]{\faCaretRight}{virtual machine, network}
+	\pointskill{\faCaretRight}{Jira}{3}[4]
+    \profilesection{About Me}
+	\aboutme{
+        \faHeart{} IT, volleyball, calisthenic, piano, guitar
+	}	
+
+
+
+
+
+	% \aboutme{
+	% 	The giant panda is a terrestrial animal and primarily spends its life
+	% 	roaming and feeding in the bamboo forests of the Qinling Mountains and in
+	% 	the hilly province of Sichuan.
+	% }
+
+	% \profilesection{Diagrams}
+	% \begin{sidebarminipage}
+	% 	\chartlabel{Bubble}
+	% 	\chartlabel{Diagrams}
+	% 	\chartlabel{with}
+	% 	\chartlabel{proper}
+	% 	\chartlabel{overflow}
+	% 	\chartlabel{protection}
+	% 	\chartlabel{for}
+	% 	\chartlabel{labels}
+	% \end{sidebarminipage}
+
+	% \begin{figure}\centering
+	% 	\smartdiagram[bubble diagram]{
+	% 		\textcolor{white}{\textbf{Being a}} \\
+	% 		\textcolor{white}{\textbf{Panda}}, % center bubble
+	% 		\textcolor{black!90}{Eating},
+	% 		\textcolor{black!90}{Sleeping},
+	% 		\textcolor{black!90}{Rolling},
+	% 		\textcolor{black!90}{Playing},
+	% 		\textcolor{black!90}{Chilling}
+	% 	}
+	% \end{figure}
+
+	% \chartlabel{Wheel Chart}
+
+	% \wheelchart{3.7em}{2em}{%
+	% 20/3em/maincolor!50/Chill,
+	% 15/3em/maincolor!15/Play,
+	% 30/4em/maincolor!40/Sleep,
+	% 20/3em/maincolor!20/Eat
+	% }
+
+	% \profilesection{Barskills}
+	% \barskill{\faSkyatlas}{Wearing asian rice hats}{60}
+	% \barskill{\faImage}{Playing Chess}{30}
+	% \barskill{\faMusic}{Playing the bamboo flute}{50}
+
+	% \profilesection{Memberships}
+	% \begin{memberships}
+	% 	\membership[4em]{pics/logo.png}{PandaScience.net}
+	% 	\membership[4em]{pics/logo.png}{Some longer text spanning over more than
+	% 		only one line}
+	% \end{memberships}
+}
+
+
+%-------------------------------------------------------------------------------
+%                         TABLE ENTRIES RIGHT COLUMN
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\par
+\makefrontsidebar{}
+
+\cvsection{Working Experience}
+\begin{cvtable}[1.5]
+  \cvitem{03.2021 -- now}{Software Engineer}{Belkasoft} \\
+
+  \cvitem{09.2019 -- 12.2019}{Junior .NET Developer}{KORUS Consulting CIS Ltd.}
+    {\\ \emph{ESPHERE Courier} \\
+     Worked with Electronic Data Interchange (\colorbox{cvsidecolor}{EDI}) on the main company project Esphere Courier (\colorbox{cvsidecolor}{REST API}), fixing bugs, adding new functionality and refactoring web services. For example:
+     \begin{itemize}
+         \item Added processing of electronic documents and checking their validity for a specific organization
+         \item Fixed incorrect work with export to Excel
+         \item I myself was founding places in the existing project logic that could be improved, and was carrying out refactoring
+     \end{itemize}
+     Development was carried out in \colorbox{cvsidecolor}{C\#}, \colorbox{cvsidecolor}{TypeScript}.
+    }
+
+\end{cvtable}
+
+\cvsection{Internships}
+\begin{cvtable}[1.5]
+
+	\cvitem{07.2019 -- 08.2019}{.NET Developer (Intern)}{KORUS Consulting CIS Ltd.}
+	{\\ \emph{Project for working with electronic signatures} \\
+    Added functionality to enhance a electronic signature in a company project, using \colorbox{cvsidecolor}{C\#}, \colorbox{cvsidecolor}{C library},  \colorbox{cvsidecolor}{marshalling}. Development was \\ carried out through \colorbox{cvsidecolor}{TDD}. \\ \\
+     \emph{Service Integration} \\
+     Improved the interaction of a company project with the Jivosite API by adding processing of requests and responses from Jivosite API, using \colorbox{cvsidecolor}{MassTransit}, as well as their serialization and deserialization. The architecture for adding related functionality has been improved with \colorbox{cvsidecolor}{reflection} and \colorbox{cvsidecolor}{Dependency Injection}.
+    }
+
+\end{cvtable}
+
+
+\cvsection{Education}
+
+\cvsubsection{Study}
+\begin{cvtable}[1.5]
+	\cvitem{2017 -- now}{Bachelor Studies}{Saint Petersburg State University}
+	{Software and Administration of Information Systems,
+		Department of Software Programming. \\
+	}
+	\cvitem{2006 -- 2017}{Secondary education}{Gymnasium named after A. Green of the city of Kirov}
+	{ * Graduated with a gold medal.}
+\end{cvtable}
+
+\cvsection{Online courses}
+\begin{cvtable}[1.5]
+	\cvitem{2021 -- now}{{Functional programming via Haskell}}{Computer Science Center}
+	{Main concepts of functional programming and Haskell.}
+	\cvitem{2020 -- now}{{Introduction to Linux}}{Bioinformatics Institute}
+	{Basic concepts of Linux.}
+\end{cvtable}
+
+\newpage
+\makebacksidebar
+
+
+% \cvsection{Publications}
+% \begin{cvtable}
+% 	\cvpubitem{Cooking: 100 recipes for lazy Pandas}{Me and My Panda Friends}
+% 		{Panda's Culinary World}{2010}
+% 	\cvpubitem{Pandastasia}{Still Me}{Bamboo Books Assoc.}{2005}
+% \end{cvtable}
+
+% \newgeometry{
+% 	top=\topbottommargin,
+% 	bottom=\topbottommargin,
+% 	right=\leftrightmargin,
+% 	left=\leftrightmargin
+% }
+
+\addtobacksidebar{}
+
+%\newpage
+%\begin{sidebar}
+%    \nameandjob%
+
+%    \setlength{\parskip}{1ex}
+
+%    \profilesection{About Me}
+%	\aboutme{
+%        \faHeart{} programming
+%	}
+%\end{sidebar}
+
+\cvsection{Projects}
+\begin{cvtable}[1.5]
+	\cvitem{2020 -- now}{{Graduation work. Digital forensics application.}}{}
+	{Closed source project.}
+	\cvitem{2019 -- 2020}{{Term paper. Implementing Asymmetric Marker processing on the C66x DSP.}}{}
+	{\\ AMP (10.17587/prin.9.156-162) implementation on a specialized DSP C66x processor for communication with ARM. I have studied the architecture of the system on a chip \colorbox{cvsidecolor}{EVMK2H}, interaction with SoC through \colorbox{cvsidecolor}{Code Composer Studio}, the architecture of \colorbox{cvsidecolor}{C66x DSP} processor and \colorbox{cvsidecolor}{assembly language DSP}. And then I have implemented the layers of the AMP model in assembly language DSP. And my assembly language implementation turned out to be 1.7 times faster than the C implementation with the -O3 optimization.}
+	\cvitem{2019}{{Term paper. CI/CD pipeline configuration for a microservice architecture web application.}}{}
+	{During my term paper on the configuration of the \colorbox{cvsidecolor}{CI/CD} pipeline for the microservice architecture web application (my role in the project was DevOps) I have automated the entire pipeline (from committing to GitHub to running a microservice in the virual machine): commit, testing, building a docker-image, pushing the docker-image to DockerHub, connecting to a VM and creating a container. In this work I have used:
+    \begin{itemize}
+    \item \colorbox{cvsidecolor}{Linux VM machines} \colorbox{cvsidecolor}{AWS} and \colorbox{cvsidecolor}{Microsoft Azure} for hosting and database services
+    \item \colorbox{cvsidecolor}{TeamCity} for pipeline configuration
+    \item \colorbox{cvsidecolor}{Docker} for flexible delivery.
+    \end{itemize}}
+	\cvitem{2018}{{Term paper. Small computer multiplayer game.}}{}
+	{A computer game that supports multiplayer. And as a developer, I do not need to set up a game server. Each player can be a server, thanks to \colorbox{cvsidecolor}{Photon Unity Networking}, therefore people can play anytime. \colorbox{cvsidecolor}{DiffMerge} was used to prevent merge conflicts. \colorbox{cvsidecolor}{Unity} was a game editor.}
+	\cvitem{2018}{{Summer SPBU project. Neurointerface for computer control.}}{}
+	{I have received data of electronic activity of the brain (P300 wave) using \colorbox{cvsidecolor}{the EMOTIV EPOC neurointerface} and \colorbox{cvsidecolor}{SDK for neurointerface} for \colorbox{cvsidecolor}{C\#}.}
+\end{cvtable}
+
+\cvsignature
+
+\end{document}

@@ -1,0 +1,154 @@
+%-------------------------------------------------------------------------------
+%                             ADDITIONAL PACKAGES
+%-------------------------------------------------------------------------------
+\documentclass[
+	a4paper,
+	% showframes,
+	% vline=2.2em,
+	% maincolor=cvgreen,
+	% sidecolor=gray!50,
+	% sectioncolor=red,
+	% subsectioncolor=orange,
+	% itemtextcolor=black!80,
+	% sidebarwidth=0.4\paperwidth,
+	% topbottommargin=0.03\paperheight,
+	% leftrightmargin=20pt,
+	% profilepicsize=4.5cm,
+	% profilepicborderwidth=3.5pt,
+	% profilepicstyle=profilecircle,
+	% profilepiczoom=1.0,
+	% profilepicxshift=0mm,
+	% profilepicyshift=0mm,
+	% profilepicrounding=1.0cm,
+	% logowidth=4.5cm,
+	% logospace=5mm,
+	% logoposition=before,
+]{fortysecondscv}
+
+
+% improve word spacing and hyphenation
+\usepackage{microtype}
+\usepackage{ragged2e}
+
+% uncomment in case you don't want any hyphenation
+% \usepackage[none]{hyphenat}
+
+% take care of proper font encoding
+\ifxetexorluatex
+	\usepackage{fontspec}
+	\defaultfontfeatures{Ligatures=TeX}
+	%	\newfontfamily\headingfont[Path = fonts/]{segoeuib.ttf} % local font
+\else
+	\usepackage[utf8]{inputenc}
+	\usepackage[T1]{fontenc}
+	%	\usepackage[sfdefault]{noto} % use noto google font
+\fi
+
+% enable mathematical syntax for some symbols like \varnothing
+\usepackage{amssymb}
+
+%-------------------------------------------------------------------------------
+%                            PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+%% mandatory information
+\cvname{Artyom Afanasov}
+\cvjobtitle{Software Engineer}
+
+%% optional information
+\cvprofilepic{pics/profile.jpg}
+% \cvlogopic{pics/profile.jpg}
+
+\cvbirthday{January 3, 1999}
+\cvaddress{Russia, Saint Petersburg, Peterhof} % Use \newline if more than 1 line is required
+\cvcustomdata{\faGithub}{\href{https://github.com/ArtyomAfanasov}{ArtyomAfanasov}}
+\cvmail{afanasov.artyom@gmail.com}
+\cvcustomdata{\faTelegram}{\href{https://t.me/patoshca}{Telegram -- @patoshca}}
+\cvphone{+7(981)718-54-81}
+
+% personal website
+% \cvsite{https://pandascience.net}
+
+% pgp key
+% \cvkey{4096R/FF00FF00}{0xAABBCCDDFF00FF00}
+
+%-------------------------------------------------------------------------------
+%                              SIDEBAR 1st PAGE
+%-------------------------------------------------------------------------------
+% add more profile sections to sidebar on first page
+\addtofrontsidebar{
+	% include gosquare national flags from https://github.com/gosquared/flags;
+	% naming according to ISO 3166-1 alpha-2 country codes
+	\graphicspath{{pics/flags/}}
+
+	% % social network accounts incl. proper hyperlinks
+	% \profilesection{Social Network}
+	% 	\begin{icontable}{2.5em}{1em}
+	% 		\social{\aiOverleafSquare}
+	% 			{https://de.overleaf.com/latex/templates/forty-seconds-cv/pztcktmyngsk}
+	% 			{Overleaf Template Link}
+	% 		\social{\faGithub}
+	% 			{https://github.com/PandaScience/FortySecondsCV}
+	% 			{Github Project Page Link}
+	% 	\end{icontable}
+
+}
+
+%-------------------------------------------------------------------------------
+%                              SIDEBAR 2nd PAGE
+%-------------------------------------------------------------------------------
+
+
+
+%-------------------------------------------------------------------------------
+%                         TABLE ENTRIES RIGHT COLUMN
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\par
+\makefrontsidebar{}
+
+29.11.2020 \\
+
+Dear Rakuten HR\\
+
+Geo Adventures Inc.
+
+Rakuten Crimson House, 1-14-1 Tamagawa, Setagaya-ku 
+
+Tokyo 158-0094 \\
+
+Dear Sir or Madam,\\
+
+As a developer interested in building reliable global Internet services that touch hundreds of millions of users across the globe every day, I was glad to see your job offer for the position of web services projects. I have experience with solving software problems in products of SberKorus company that is included in the \colorbox{cvsidecolor}{TOP-20} largest IT suppliers according to CNews Analytics, 2018. I am positive I can help with Rakuten's upcoming challenges. \\
+
+In my past position at SberKorus, I worked by the \colorbox{cvsidecolor}{scrum} methodology with \\ Electronic Data Interchange (\colorbox{cvsidecolor}{EDI}) on the main company project Esphere Courier (\colorbox{cvsidecolor}{REST API}) and some internal projects, fixing bugs, adding new functionality and refactoring \colorbox{cvsidecolor}{web services}. Here are examples of my work (included design, coding, code review, refactoring, test and release): 
+
+\begin{itemize}
+    \item Added processing of electronic documents and checking their validity for \\ a specific organization
+    \item Added functionality to enhance an electronic signature, using C library, \\ marshalling. Development was carried out through \colorbox{cvsidecolor}{TDD}.
+\end{itemize}
+
+\\ During my term paper on the configuration of the \colorbox{cvsidecolor}{CI/CD} pipeline for the microservice architecture web application (my role in the project was DevOps) I have automated the entire pipeline (from committing to GitHub to running the application on the virual machine): commit, testing, building a docker-image, pushing the docker-image to DockerHub, connecting to a VM and creating a container. In this work I have used:
+
+\begin{itemize}
+    \item \colorbox{cvsidecolor}{Linux VM machines} \colorbox{cvsidecolor}{AWS} and \colorbox{cvsidecolor}{Microsoft Azure} for hosting and database services 
+    \item \colorbox{cvsidecolor}{TeamCity} for pipeline configuration
+    \item \colorbox{cvsidecolor}{Docker} for flexible delivery.
+\end{itemize}
+
+\\ Currently I work on Graduation project, related to \colorbox{cvsidecolor}{Java} application. \\
+
+Rakuten's projects related to web services are a perfect match for my personal and professional interests and an exciting opportunity to create a scalable service and make it global to facilitate the transition of commerce to the Internet space. I would love to leverage my knowledge of software engineering to achieve significant results in Rakuten's projects.\\
+
+Best regards,\\
+Artyom Afanasov\\
+
+P.S. During my other term paper I have received a job offer from my scientific supervisor, but I did not accept it as I was going to work on another project at another company in my fourth year at SPBU.\\
+
+A little more about skills. I also have designed an SPBU course task database project and have written \colorbox{cvsidecolor}{SQL} code for it. In my position at SberKorus I used ORM for .NET and read SQL source code. Besides, I wrote on \colorbox{cvsidecolor}{Typescript} in SberKorus projects.\\
+Thanks to the theory and tasks from Software Design SPBU course ("Linux bash" and "Roguelike game" architectures) I now have more experience in \colorbox{cvsidecolor}{software design}. And I have skills with \colorbox{cvsidecolor}{Linux} tools generally, for example, due to exploit work in the SPBU Information Security course. \\
+I also have some \colorbox{cvsidecolor}{Python} programming skills related to math calculations.
+
+\cvsignature
+
+\end{document}
