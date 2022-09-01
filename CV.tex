@@ -29,6 +29,7 @@
 % improve word spacing and hyphenation
 \usepackage{microtype}
 \usepackage{ragged2e}
+\usepackage{hyperref}
 
 % uncomment in case you don't want any hyphenation
 % \usepackage[none]{hyphenat}
@@ -115,8 +116,9 @@
 	\skill[1.8em]{\faCaretRight}{F\#}
 	\pointskill{\faCaretRight}{VCS}{3}[4]
 	\skill[1.8em]{\faCaretRight}{git, TortoiseGit, GitLub, GitHub}
-	\pointskill{\faDatabase}{Databases}{2}[4]
+	\pointskill{\faDatabase}{Databases}{3}[4]
 	\skill[1.8em]{\faCaretRight}{MsSQL, ORM}
+	\skill[1.8em]{\faCaretRight}{SQLite}
 	\skill[1.8em]{\faCaretRight}{Amazon RDS}
 	\skill[1.8em]{\faCaretRight}{Microsoft Azure SQL Databases}
 	\pointskill{\faCogs}{CI/CD}{2}[4]
@@ -218,8 +220,20 @@
   \cvitem{03.2021 -- now}{.NET Software Engineer}{
   Belkasoft, Russia}
     {
-    Added the functionality “WhatsApp backup acquisition and decryption for the Android platform” to the Belkasoft X project (not all competing digital expertise companies have this functionality). My other duties: participation in the creation of new company projects, implementation of new backend functionality, software design discussion, backend code maintenance, code refactoring of different sizes, working with legacy code, fixing bugs in UI, code review. Projects are related to data acquisition and analysis from various devices and applications.
+    Added the functionality “WhatsApp backup acquisition and decryption for the Android platform” to the Belkasoft X project (not all competing digital expertise companies have this functionality). My other duties:
+    \begin{itemize}
+        \item Software products infrastructure. Migrating projects from .net Framework to .net5/.net6.
+        \item Implementation of new backend functionality. For example, export and import eDiscovery Concordance Load File to the internal design of the "Belkasoft X" product. Export of artifact filters from the "Belkasoft X" product. Data acquisiton from backups of popular applications.
+        \item Reverse engineering, research. For example, data deduplication Volume Shadow Copy (ntfs file system recovery tool), a concrete example is Windows system restore points. WhatsApp data acquisition when doing the bachelor graduation project (sniffing, decompiling, modification). Structure of the eDiscovery container (Concordance Load File).
+        \item Participation in the creation of new company projects -- Belkasoft Triage.
+        \item Careful attention to the company's product during development, thanks to which I identify related bugs not found by testers.
+        \item Code refactoring.
+        \item Fixing bugs in UI and backend.
+        \item Code review.
+    \end{itemize}
+    Projects are related to eDiscovery, data acquisition and analysis from various devices and applications.
     \\ \colorbox{cvsidecolor}{C\#}
+    \colorbox{cvsidecolor}{C++}
     \colorbox{cvsidecolor}{WPF}
     \colorbox{cvsidecolor}{MVVM}
     \colorbox{cvsidecolor}{reverse engineering}
@@ -232,10 +246,10 @@
     {\\
      Worked with Electronic Data Interchange (\colorbox{cvsidecolor}{EDI}) on the main company project Esphere Courier, backend code maintenance, adding new functionality, refactoring web services.
      \\ \colorbox{cvsidecolor}{C\#}
+     \colorbox{cvsidecolor}{REST API}
      \colorbox{cvsidecolor}{TDD}
      \colorbox{cvsidecolor}{Dependency Injection}
      \colorbox{cvsidecolor}{TypeScript}
-     \colorbox{cvsidecolor}{REST API}
     }
 
 \end{cvtable}
@@ -263,7 +277,7 @@
 \cvsubsection{Study}
 \begin{cvtable}[1.5]
 	\cvitem{2021 -- now}{Re-qualification}{Yandex School of Data Analysis, Russia}
-	{ Machine Learning Engineering}
+	{Leave of absence}
 	\cvitem{2021 -- now}{Master's degree}{ITMO University, Russia}
 	{ Software Engineering }
 	\cvitem{2017 -- 2021}{Bachelor's degree}{Saint Petersburg University, Russia}
@@ -284,9 +298,6 @@
 	{Basic concepts of Linux.}
 \end{cvtable}
 
-\newpage
-\makebacksidebar
-
 \cvsubsection{Forums \& Schools}
 \begin{cvtable}[1.5]
 	\cvitem{12.04.2021 -- 16.04.2021}{{Math and AI forum}}{Moscow Institute of Physics and Technology, Russia}
@@ -295,6 +306,7 @@
 	{ Programming a neurointerface for computer control }
 \end{cvtable}
 
+\makebacksidebar
 
 \newpage
 \makefrontsidebar{}
@@ -331,7 +343,7 @@
 \cvsection{Projects}
 \begin{cvtable}[1.5]
 	\cvitem{09.2020 -- 05.2021}{{Graduation work. "WhatsApp backup acquisition and decryption for the Android platform"}}{}
-	{Closed source project. }
+	{Closed source project. Clickable words with a link to the work description: \href{https://dspace.spbu.ru/bitstream/11701/32361/2/reviewSV_Afanasov_review.pdf}{Supervisor review}, \href{https://dspace.spbu.ru/bitstream/11701/32361/1/Afanasov_report.pdf}{Text}, \href{https://se.math.spbu.ru/thesis/slides/Afanasov_Artem_Konstantinovich_Bachelor_Thesis_2021_slides.pdf}{Presentation}.}
 	\cvitem{09.2019 -- 05.2020}{{Term paper. Implementing Asymmetric Marker processing on the C66x DSP}}{}
 	{\\ AMP (10.17587/prin.9.156-162) implementation on a specialized DSP C66x processor for communication with ARM. I have studied the architecture of the system on a chip \colorbox{cvsidecolor}{EVMK2H}, interaction with SoC through \colorbox{cvsidecolor}{Code Composer Studio}, the architecture of \colorbox{cvsidecolor}{C66x DSP} processor and \colorbox{cvsidecolor}{assembly language DSP}. And then I have implemented the layers of the AMP model in assembly language DSP. And my assembly language implementation turned out to be 1.7 times faster than the C implementation with the -O3 optimization.}
 	\cvitem{02.2019 -- 05.2019}{{Term paper. CI/CD pipeline configuration for a microservice architecture web application}}{}
